@@ -31,3 +31,12 @@
 
 Пример использования isPalindromString("Madam, Anna went to the civic center") # ["madam", "anna", "civic"]
 """
+
+def isPalindrom (word):
+    word = word.lower()
+    if word == word[::-1]: 
+        return True
+    else:
+        return False
+word = input("Введите слово: ")
+print(isPalindrom(word))
